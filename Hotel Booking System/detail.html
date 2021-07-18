@@ -9,15 +9,33 @@
       body{
         height: 100%;
          width:100%;
+         margin: 0;
+         background-color: #e0e0e0;
       }
       .container {
          height: 100%;
          width:100%;
       }
+      header{
+          background-color: rosybrown;
+       }
+       footer{
+          background-color: rosybrown;
+       }
+       #imgrad {
+          margin: 2% 4% 0 4%;
+       }
+       #bookingForm {
+         margin: 0 4% 1% 4%;
+       }
+       #description {
+         margin: 1% 4% 2% 4%;
+       }
+       
    </style>
 </head>
 <body>
-    <div class="container">
+   <div class="container">
      <header>
       <a href="index.html">
          <img src="C:\Hotel Booking Website\Hotel Booking System\assests\images\logo.png" height="60" width="60" alt="logo"/>
@@ -26,10 +44,12 @@
      </header>
 
      <div class="Content">
-      <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" style="height: 500px; width: 500px;">
-      <br/>
-      <form action="payment.html" method="GET" class="booking">
-         <div class="booking">
+      <div id="imgrad">
+         <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" style="height: 500px; width: 500px;">
+      </div>
+      <div id="bookingForm">
+         <form action="payment.html" method="GET" class="booking">
+          <div id="booking">
             <label for="adults">Adults:</label>
             <input type="number" min="1" id="adults" name="adultsNo" required><br/>
             <label for="name">Name:</label>
@@ -41,31 +61,32 @@
              <label for="total">Total:</label>
             <input type="number" id="total" name="totalFare" disabled><br/> 
             <input type="submit" value="Book Now">
-         </div>
-      </form>   
-      <br/>
-      <h2>Raddison Blu Hotel</h2>
-         <span>RATING
-         <br/>
-         <br/>
-         5 Star
-         <br/>
-         <br/>
-         AMENITIES
-         <br/>
-         </span>
-         <ul>
+          </div>
+         </form>   
+      </div>
+      <div id="description">
+        <h2>Raddison Blu Hotel</h2>
+          <span>RATING
+          <br/>
+          <br/>
+           5 Star
+          <br/>
+          <br/>
+           AMENITIES
+          <br/>
+          </span>
+          <ul>
             <li>Room service</li>
             <li>Restaurant</li>
             <li>Business Ccnter</li>
             <li>Fintnes center</li>
             <li>Pool</li>
-         </ul>
-         <br/>
+          </ul>
          <h5>DESCRIPTION</h5>
-         <p>Boasting a tranquil location away from the bustle of the city and within walking distance of the Delhi Metro, the five-star Radisson Blu New Delhi Dwarka is the perfect full-service destination for stress-free stays in the National Capital Region (NCR). After you arrive from Indira Gandhi International Airport (DEL), make the 30-minute commute to our hotel and take advantage of our complimentary valet service. When you’re ready to explore the nearby area, you can head to sites like the beautifully decorated ISKCON Dwarka temple, just a few minutes away.
+          <p>Boasting a tranquil location away from the bustle of the city and within walking distance of the Delhi Metro, the five-star Radisson Blu New Delhi Dwarka is the perfect full-service destination for stress-free stays in the National Capital Region (NCR). After you arrive from Indira Gandhi International Airport (DEL), make the 30-minute commute to our hotel and take advantage of our complimentary valet service. When you’re ready to explore the nearby area, you can head to sites like the beautifully decorated ISKCON Dwarka temple, just a few minutes away.
             Upon your return, head to your contemporary room or suite and connect to free Wi-Fi to upload photos of your adventures. If you’re hungry, our on-site restaurant Spring hosts breakfast, lunch, and dinner each day and features a variety of Indian and American favorites. When you’re ready to relax and recharge, an outdoor pool, a fitness center, a spa, and a recreation center provide a host of choices. </p>
-     </div>
+      </div>
+   </div>
 
      <Footer>
       <a href="contact.html"> Contact Us </a>
@@ -77,7 +98,7 @@
            <img src="assests/images/instagram.png" style="height: 20px; width: 22px;">
          </a>
          <a href="https://twitter.com" target="_blank">
-         <img src="assests/images/twitter.png" style="height: 20px; width: 22px;">
+            <img src="assests/images/twitter.png" style="height: 20px; width: 22px;">
          </a>
          <br/>
          <span>&copy; 2020 ROOM SEARCH PVT. LTD</span>
