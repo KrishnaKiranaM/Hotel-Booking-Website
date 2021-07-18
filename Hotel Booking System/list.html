@@ -5,28 +5,38 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title> 
+    <style>
+      body{
+        height: 100%;
+         width:100%;
+      }
+      .container {
+         height: 100%;
+         width:100%;
+      }
+   </style>
 </head>
 <body>
-    <div class="main">
-     <div class="header">
+    <div class="container">
+     <header>
         <a href="index.html">
-        <img src="C:\Hotel Booking Website\Hotel Booking System\assests\images\logo.png" height="50" width="50" alt="logo"/>
+        <img src="C:\Hotel Booking Website\Hotel Booking System\assests\images\logo.png" height="60" width="60" alt="logo"/>
         </a>
         <a href="login.html" >Login</a>
-     </div>
+     </header>
 
      <div class="Content">
          <div class="list">
             <ul>
-             <li><a href="list.html">List View</a></li>
-             <li><a href="list.html">Map View</a></li>
+             <li><a href="#ListView">List View</a></li>
+             <li><a href="#mapview">Map View</a></li>
             </ul>
          </div>
 
-         <div class="ListView">
+         <div id="ListView">
                <div id="raddison">
                   <a href="detail.html">
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" style="height: 250px; width: 250px;">
                   <h3>Raddison Blu Hotel</h3> 
                   <span>
                     5 Star
@@ -38,7 +48,7 @@
                
                <div id="lalith">
                   <br/>
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg" style="height: 250px; width: 250px;">
                   <h3>The Lalit New Delhi</h3> 
                   <span>
                     4.5 Star
@@ -49,7 +59,7 @@
 
                <div id="taj">
                   <br/>
-                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg">
+                  <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" style="height: 250px; width: 250px;">
                   <h3>Taj Palace</h3> 
                   <span>
                     4.0 Star
@@ -59,7 +69,7 @@
                </div>
          </div>
 
-         <div class="mapview">
+         <div id="mapview">
             <br/>
             <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
             <p>Map View</p>
@@ -68,7 +78,7 @@
      </div>
 
      
-     <div class="Footer">
+     <footer>
       <a href="contact.html"> Contact Us </a>
         <div id="social">
          <a href="https://www.facebook.com" target="_blank">
@@ -82,8 +92,8 @@
          </a>
          <br/>
          <span>&copy; 2020 ROOM SEARCH PVT. LTD</span>
-        </div>
-     </div>
+      </footer>
+   </div>
    
 </body>
 </html>
