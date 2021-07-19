@@ -1,0 +1,32 @@
+.raddison, .lalith , .taj {
+    margin: 4%;
+    background-color: rgb(132,136,139);
+    height: auto;
+    width: 40%;
+    display:inline-block;
+    vertical-align: top;
+ }
+
+ .imglist {
+    height:70%; 
+    width: 70%;
+ }
+
+
+ .lists{
+     display: block;
+    width: 100%;
+    margin-top: 70px;
+    text-align: center;
+    font-weight: bolder;
+ }
+
+ .list-anchors{
+    padding: 2%;
+ }
+
+
+ .mapview{
+    display: none;
+ }
+ 

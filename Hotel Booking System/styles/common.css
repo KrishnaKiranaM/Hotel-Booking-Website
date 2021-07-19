@@ -1,0 +1,89 @@
+body{
+    height: 100%;
+     width:100%;
+     margin: 0;
+     background-color: #e0e0e0;
+  }
+
+  header{
+     background-color: rosybrown;
+     position: fixed;
+     width: 100%;
+     top:0;
+     z-index: +1;
+   
+  }
+
+  footer{
+     background-color: rosybrown;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+     z-index: +1;
+  }
+
+  .container {
+    height: 100%;
+    width:100%;
+    font-family:sans-serif;
+ }
+
+ a{
+    color: black;
+    text-decoration: none;
+ }
+
+.socail-icons{
+   height: 20px; 
+   width: 22px;
+}
+
+.logo{
+   height: 60px;
+   width: 60px;
+   display: inline;
+   float: left;
+   vertical-align: middle;
+   
+}
+
+ .loginlink {
+  display: inline;
+  float: right;
+  vertical-align: middle;
+  text-align: center;
+  padding: 20px;
+}  
+
+.copyright{
+ text-align: center ;
+ vertical-align: text-bottom;
+ display: inline;
+ position:absolute;
+ width: 100%;
+ left: 0;
+ font-size: .8em;
+ top: 12px;
+ bottom: 0;
+}
+
+.contact-footer{
+float: left;
+display: inline;
+vertical-align: middle;
+text-align: center;
+margin: 10px;
+position: relative;
+
+}
+
+.social{
+display: inline;
+ float: right;
+ vertical-align: middle ;
+ margin: 10px;
+ position: relative;
+}
+.content{
+   margin:0 auto;
+}
