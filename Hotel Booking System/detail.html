@@ -22,35 +22,50 @@
      </header>
 
      <div class="Content">
-      <div id="imgrad">
+        <div class="wrapper">
+      <div class="imgrad">
          <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="radimg" >
       </div>
       <div class="bookingForm">
          <form action="payment.html" method="GET" class="booking">
-          <div class="booking">
-            <label for="adults">Adults:</label>
-            <input type="number" min="1" id="adults" name="adultsNo" required><br/>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="nameofguest" required><br/>
-            <label for="from">From Date:</label>
-            <input type="date" id="from" name="fromDate" required><br/>
-            <label for="to">To Date:</label>
-            <input type="date" id="to" name="toDate" required><br/>
-             <label for="total">Total:</label>
-            <input type="number" id="total" name="totalFare" disabled><br/> 
-            <input type="submit" value="Book Now">
+          <div class="booking"> 
+            <div class="labelwrapper">
+               <label for="adults" class="labelclass">Adults:</label>
+               <input type="number" min="1"  id="adults" name="adultsNo" class="inputclass" required>
+            </div>
+            <div class="labelwrapper">
+               <label for="name" class="labelclass">Name:</label>
+               <input type="text" id="name" name="nameofguest" class="inputclass" required>
+            </div>
+            <div class="labelwrapper">
+               <label for="from" class="labelclass">From Date:</label>
+               <input type="date" id="from" name="fromDate" class="inputclass" required>
+            </div>
+            <div class="labelwrapper">
+               <label for="to" class="labelclass">To Date:</label>
+               <input type="date" id="to" name="toDate" class="inputclass" required>
+            </div>
+            <div class="labelwrapper">
+               <label for="total" class="labelclass">Total:</label>
+               <input type="number" id="total" name="totalFare" class="inputclass" disabled> 
+            </div>
+
+            <div class="booknow">
+            <input type="submit" value="Book Now" >
+            </div>
           </div>
          </form>   
       </div>
-      <div id="description">
+   </div>
+      <div class="description">
         <h2>Raddison Blu Hotel</h2>
-          <span>RATING
+          <span><b>RATING</b>
           <br/>
           <br/>
            5 Star
           <br/>
           <br/>
-           AMENITIES
+         <b>AMENITIES</b> 
           <br/>
           </span>
           <ul>

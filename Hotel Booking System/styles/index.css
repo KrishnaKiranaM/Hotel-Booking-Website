@@ -5,20 +5,28 @@
     height: 380px;
     background-size: cover ; 
     width: 100%; 
-    display: block;
+    align-self: flex-start;
  }
- #imagesTemp{
-    margin:0 15%;
+ .imagesTemp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 4% 0% 4% 0%;
+   
     
  }
  .imageCard{
    height: 150px; 
    width: 150px;
    border-radius: 25%;
-   padding: 4%;
+   box-shadow:10px 10px 10px gray ;
+   position: relative;
+   margin-top: 10%;
  }
 
- #searchBar{
+ .searchBar{
     border: 1px solid transparent;
     background-color: #f1f1f1;
     border-radius: 12px;
@@ -28,8 +36,40 @@
     width: 30%;
     top: 50%;
     left: 35%;
-
  }
  #view {
     text-align: center;
+ }
+
+ .Content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+ }
+
+ .searchBar:focus{
+    outline: none;
+ }
+
+ .imagewrap:hover  .imagelabel{
+    color: #f1f1f1;
+    opacity: 1;
+    background:  rgba(0, 0, 0, 0.5);
+ }  
+ 
+
+ .imagelabel{
+    position: absolute;
+    text-align: center;
+    height: 150px; 
+    width: 150px;
+    border-radius: 25%;
+    opacity: 0;
+    top: 0;
+    line-height: 150px;
+ }
+
+ .imagewrap{
+    position: relative;
+    border-radius: 25%;
  }
