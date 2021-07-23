@@ -27,9 +27,12 @@ body{
      flex-direction: row;
      flex-wrap: nowrap;
      justify-content: space-between;
+     align-items: center;
+     text-align: center;
+     vertical-align: middle;
   }
 
-  .container {
+  .main-wrapper {
     height: 100%;
     width:100%;
     font-family:sans-serif;
@@ -55,15 +58,21 @@ body{
   margin-left: auto;
 }  
 
-.copyright{
- font-size: .8em;
-}
 
 .contact-footer{
 margin: 10px;
-
 }
 
 .social{
  margin: 10px;
 }
+
+a:hover {
+   color: black;
+   text-decoration: none;
+}
+
+.copyright p{
+   margin-top: 5%;
+}
+

@@ -43,21 +43,20 @@
  }
 
 
- .mapview{
-    display: none;
- }
  
- .content{
+ 
+ .content, .tab-content{
    display: flex;
    flex-direction: column;
  }
 
- .ListView{
+ #ListView{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     font-family: cursive;
+    position: relative;
  }
 
  .hoteldetails{
@@ -68,3 +67,13 @@
   align-items: left;
   flex-wrap: nowrap;
  }
+
+ .raddison:hover, .lalith:hover , .taj:hover{
+   background-color: rosybrown;
+ }
+
+  #mapview{
+   position: absolute;
+ }
+
+ 

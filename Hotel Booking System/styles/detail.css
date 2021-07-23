@@ -12,7 +12,7 @@
  .labelwrapper{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: flex-start;
   margin-right: auto;
@@ -38,8 +38,8 @@
    font-family: cursive;
  }
 #radimg{
-  height: 50%;
-   width:70%;
+  height: 30%;
+   width:80%;
    text-align: center; 
    padding-left: 10%;
 }

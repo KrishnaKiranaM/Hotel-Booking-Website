@@ -5,11 +5,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>List</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css"  href="styles/common.css">
     <link rel="stylesheet" type="text/css"  href="styles/list.css">
 </head>
 <body>
-    <div class="container">
+   <!-- Container -->
+    <div class="main-wrapper">
+       <!-- Header -->
      <header>
       <div class="logodiv">
         <a href="index.html">
@@ -17,17 +22,61 @@
         </a>
         </div>
         <div class="loginlink">
-        <a href="login.html" >Login</a>
+         <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal" id="login-button">
+            LOGIN
+        </button>
         </div>
      </header>
 
-     <div class="Content">
-         <div class="lists">
-             <a href="#ListView" class="list-anchors">List View</a> 
-             <a href="#mapview" class="list-anchors">Map View</a>
+      <!-- Modal -->
+      <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <form action="index.html" method="GET" id="modal-details">
+                   <div class="form-group">
+                       <label for="example-input-username">Username</label>
+                       <input type="text" class="form-control" id="example-input-username" name="Username" aria-describedby="usernameHelp" placeholder="Enter Username">
+       
+                   </div>
+                   <div class="form-group">
+                        <label for="example-input-password">Password</label>
+                        <input type="password" class="form-control" id="example-input-password" name="Password" placeholder="Password">
+                   </div>
+               </form>               
+             </div>
+             <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" form="modal-details">Log In</button>
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             </div>
+           </div>
          </div>
+       </div>
 
-         <div class="ListView">
+     <!-- Content  -->
+
+     <div class="Content">
+        <!-- Navbar lists -->
+         <div class="lists">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+               <li class="nav-item">
+                 <a class="nav-link active" id="pills-list-tab" data-toggle="pill" href="#ListView" role="tab" aria-controls="pills-list" aria-selected="true">List View</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" id="pills-map-tab" data-toggle="pill" href="#mapview" role="tab" aria-controls="pills-map" aria-selected="false">Map View</a>
+               </li>
+             </ul>
+          <!--  -->
+
+         </div>
+         <div class="tab-content" id="pills-tabContent">
+         <div id="ListView" class="tab-pane fade show active" id="pills-list" role="tabpanel" aria-labelledby="pills-list-tab">
                <div class="raddison">
                   <a href="detail.html">
                      <div class="hotel">
@@ -73,20 +122,50 @@
                </div>
          </div>
 
-         <div class="mapview">
+         <div id="mapview" class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
             <br/>
             <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png">
-            <p>Map View</p>
          </div>
-
+      </div>
      </div>
 
+      <!-- Contact Modal -->
+      <div class="modal fade" id="Contact-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <p>
+                  Thank you for reaching out!!! <br/>
+                  Please enter your email and we wil get back to you<br/>
+               </p>
+               <form action="index.html" method="GET" id="modal-email-details">
+                  <div class="form-group">
+                      <label for="example-input-email">Email Id:</label>
+                      <input type="email"  id="example-input-email" name="EmailId" aria-describedby="emailHelp" placeholder="Enter Email Id">
+                  </div>
+               </form>
+             </div>
+             <div class="modal-footer">
+               <button type="submit" class="btn btn-primary" form="modal-email-details">Submit</button>
+             </div>
+           </div>
+         </div>
+       </div>
+      
+
+      <!-- Footer -->
      
      <Footer>
       <div class="contact-footer">
-         <a href="contact.html"> Contact Us </a>
+         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Contact-Modal" id="contact-button">Contact Us</button>
       </div>
-      <p class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD</p>
+      <div class="copyright"><p>&copy; 2020 ROOM SEARCH PVT. LTD</p></div>
       <div class="social">
          <a href="https://www.facebook.com" target="_blank">
             <img src="assests/images/facebook.png" class="socail-icons">

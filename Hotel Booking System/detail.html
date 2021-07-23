@@ -5,11 +5,16 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css"  href="styles/common.css">
     <link rel="stylesheet" type="text/css"  href="styles/detail.css">
 </head>
 <body>
-   <div class="container">
+   <!-- Container -->
+   <div class="main-wrapper">
+      <!-- Header -->
      <header>
       <div class="logodiv">
       <a href="index.html">
@@ -17,10 +22,44 @@
       </a>
       </div>
       <div class="loginlink">
-      <a href="login.html">Login</a>
+         <button type="button" class="btn btn-light" data-toggle="modal" data-target="#example-modal" id="login-button">
+            LOGIN
+        </button>
       </div>
      </header>
 
+      <!-- Modal -->
+      <div class="modal fade" id="example-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <form action="index.html" method="GET" id="modal-details">
+                   <div class="form-group">
+                       <label for="example-input-username">Username</label>
+                       <input type="text" class="form-control" id="example-input-username" name="Username" aria-describedby="usernameHelp" placeholder="Enter Username">
+       
+                   </div>
+                   <div class="form-group">
+                        <label for="example-input-password">Password</label>
+                        <input type="password" class="form-control" id="example-input-password" name="Password" placeholder="Password">
+                   </div>
+               </form>               
+             </div>
+             <div class="modal-footer">
+                <button type="submit" class="btn btn-primary" form="modal-details">Log In</button>
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+             </div>
+           </div>
+         </div>
+       </div>
+
+     <!-- Content  -->
      <div class="Content">
         <div class="wrapper">
       <div class="imgrad">
@@ -51,7 +90,7 @@
             </div>
 
             <div class="booknow">
-            <input type="submit" value="Book Now" >
+               <button type="submit" class="btn btn-outline-success" data-target="payment.html">Book Now</button>
             </div>
           </div>
          </form>   
@@ -81,11 +120,42 @@
       </div>
    </div>
 
+    <!-- Contact Modal -->
+    <div class="modal fade" id="Contact-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Get In Touch</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+               Thank you for reaching out!!! <br/>
+               Please enter your email and we wil get back to you<br/>
+            </p>
+            <form action="index.html" method="GET" id="modal-email-details">
+               <div class="form-group">
+                   <label for="example-input-email">Email Id:</label>
+                   <input type="email"  id="example-input-email" name="EmailId" aria-describedby="emailHelp" placeholder="Enter Email Id">
+               </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary" form="modal-email-details">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <!-- Footer -->
    <Footer>
       <div class="contact-footer">
-         <a href="contact.html"> Contact Us </a>
+         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Contact-Modal" id="contact-button">Contact Us</button>
       </div>
-      <p class="copyright">&copy; 2020 ROOM SEARCH PVT. LTD</p>
+      <div class="copyright"><p>&copy; 2020 ROOM SEARCH PVT. LTD</p></div>
       <div class="social">
          <a href="https://www.facebook.com" target="_blank">
             <img src="assests/images/facebook.png" class="socail-icons">
