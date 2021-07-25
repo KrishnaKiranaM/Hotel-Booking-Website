@@ -10,7 +10,7 @@ body{
      position: fixed;
      width: 100%;
      top:0;
-     z-index: +1;
+     z-index: +2;
      display: flex;
      flex-direction: row;
      align-items: center;
@@ -22,7 +22,7 @@ body{
      position: fixed;
      width: 100%;
      bottom: 0;
-     z-index: +1;
+     z-index: +2;
      display: flex;
      flex-direction: row;
      flex-wrap: nowrap;
@@ -74,5 +74,19 @@ a:hover {
 
 .copyright p{
    margin-top: 5%;
+   
 }
 
+.social{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+
+ /*for small sized screens */
+ @media only screen and (max-width:576px) {
+
+   .copyright{
+      font-size: 9px;
+   }
+ }

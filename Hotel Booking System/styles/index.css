@@ -13,9 +13,7 @@
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 4% 0% 4% 0%;
-   
-    
+    margin: 4% 0% 4% 0%;   
  }
  .imageCard{
    height: 150px; 
@@ -75,3 +73,30 @@
     position: relative;
     border-radius: 25%;
  }
+
+
+ /*for medium sized screens */
+ @media only screen and (min-width:576px) and (max-width: 768px){
+   .imagesTemp{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-basis: 50%;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 4% 30% 4% 30%;   
+   }
+ }
+
+ /*for small sized screens */
+ @media only screen and (max-width:576px) {
+    
+   .imagesTemp{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      align-items: center;
+      margin: 4% 0% 4% 0%;   
+   }
+}

@@ -1,10 +1,9 @@
 .raddison, .lalith , .taj {
     background-color: lightgray;
-    height:auto;
-    width:auto;
+    height: 200px;
+    width: 500px;
     margin: 2% 10%;
-    position: relative;
-    flex-basis: 30%;
+    
  }
 
  .raddison a{
@@ -57,6 +56,7 @@
     justify-content: space-between;
     font-family: cursive;
     position: relative;
+    width: auto;
  }
 
  .hoteldetails{
@@ -76,4 +76,55 @@
    position: absolute;
  }
 
- 
+ .checked {
+  color: orange;
+}
+
+
+@media only screen and (max-width:576px) {
+  .raddison a{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    
+  }
+
+  .raddison{
+    background-color: lightgray;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 50%;
+
+  }
+  .taj{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: lightgray;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 50%;
+  }
+  .lalith{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: lightgray;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 50%;
+  }
+
+  #map {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width:576px) and (max-width: 768px){
+  #map {
+    width: 700px;
+    
+  }
+
+}
